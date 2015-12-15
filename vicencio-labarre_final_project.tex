@@ -29,7 +29,7 @@ In the first question I had to import matplotlib.pylab as plt in order to make t
 
 \subsection{Equations used to find position}
 
-In order to find the position of the human and raptor I used the equation \textbf{position = v*time} for Jimmy's position I added 30 to the equation since there was a 30 meter head start. 
+In order to find the position of the human and raptor I used the equation \textbf{position = v*time} for Jimmy's position I added 30 to the equation since there was a 30 meter head start.$$x_f = x_i \times t + 30 $$ 
 
 \subsection{Plotting}
 When plotting this Position Vs. Time graph I was sure label both the x and y axis as well as include a title "Human vs Raptor Position \& time". I also included a legend in order to specify which line went with either Jimmy or the raptor.
@@ -69,12 +69,10 @@ I set up a function in this question called "free" I made three different bites 
 Now to find the probability i used a for loop. I set raptor-food and safe equal to 0. Then i to i+=1 and t to t=free() which allowed for me to use and if and elif statement to find the probability. if t == "raptor food" then raptor food +=1 elif t == "you're safe!!!' safe +=1. By calling my function from above i used "freechance = (safe/float(1000))*100 to find the final probability which changes a little each time, but it roughly 61.20 percent 
 
 \subsection{Plot With arrow}
-%\graphicspath { {Desktop/github_repos/final_project/Final/} }
-\begin{figure}[h]
-
-\label{fig:Position vs. Time with arrow}
+\begin{figure}
 \includegraphics[width=0.5\textwidth]{Jimmy_Graph_Arrow.png}
 \caption{This is the plot from question three which is the same as the plot from question one but includes an arrow to identify where the raptor is 1 meter behind Jimmy.}
+\label{fig:Position vs. Time with arrow}
 \end{figure}
 
 \section{Conclusion}
