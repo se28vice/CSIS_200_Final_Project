@@ -11,7 +11,7 @@
 \date{\today}
 
 \begin{abstract}
-This project was meant to find the likely-hood that a simple human, we'll call him Jimmy, would be able to escape a vicious velociraptor. The velociraptor was traveling at a velocity of 18 m/s while Jimmy was only traveling at 3 m/s luckily the Jimmy was given a 30 meter head start. But the second question asks you to find out when the raptor is able to catch up to you. The third question gets a little more difficult when you find that the raptor will only start to bite Jimmy when he his 1 meter away, you then must figure out how long in seconds and how far in meters Jimmy was able to travel before the raptor is close enough to bite. In the fourth question you must figure out the probability that Jimmy will get bitten by the raptor, luckily each time the raptor misses he looses a bit of his accuracy since he's getting more and more frustrated. 
+This project was meant to find the likely-hood that a simple human, we'll call him Jimmy, would be able to escape a vicious velociraptor. The velociraptor was traveling at a velocity of 18 m/s while Jimmy was only traveling at 3 m/s luckily, Jimmy was given a 30 meter head start. For the second question it asks you to find out when the raptor is able to catch up to you. The third question gets a little more difficult when you find that the raptor will only start to bite Jimmy when he his 1 meter away, you then must figure out how long in seconds and how far in meters Jimmy was able to travel before the raptor is close enough to bite him. In the fourth question you must figure out the probability that Jimmy will get bitten by the raptor, luckily each time the raptor misses he looses a bit of his accuracy since he's getting more and more frustrated. 
 
 
 \end{abstract}
@@ -50,11 +50,11 @@ In this question I used a function to find how many meters Jimmy could travel be
 
 \subsection{Function explanation}
 
-I called my function for this section, "gotcha" and i stated that for i in t if Jimmy and the raptors position equal each other return the time and position at which they do. I ended up getting the output that Jimmy ran 36 meters before the raptor caught him and the time that passed was 2 seconds. 
+I called my function for this section, "gotcha" and i stated that for i in t if Jimmy and the raptors position equal each other return the time and position at which they do. This means that the function will give the values when the raptor and Jimmy have equal position and time. I ended up getting the output that Jimmy ran 36 meters before the raptor caught him and the time that passed was 2 seconds. 
 
 \section{Question 3: When will the raptor strike}
 
-In this question I took a similar approach as question 2 but instead of having the positions equal each other I set the function to return the time and distance when the raptor positions minus Jimmy's position was less than or equal to 1. Then i added an arrow to my plot from question 1 to indicate where the raptor would be 1 meter behind Jimmy.As a result I got that Jimmy ran 33.0 meters in 1.0 seconds before the raptor was 1 meter behind him.
+In this question I took a similar approach as question 2 but instead of having the positions equal each other I set the function to return the time and distance when the raptor positions minus Jimmy's position was less than or equal to 1. This causes the function to only give the values of the position and time before the raptor will catch up to Jimmy, but just as it starts to bite. Then I added an arrow to my plot from question 1 to indicate where the raptor would be 1 meter behind Jimmy. As a result I got that Jimmy ran 33.0 meters in 1.0 seconds before the raptor was 1 meter behind him.
 
 \section{Question 4: Will the raptor bite Jimmy?}
 
@@ -62,7 +62,7 @@ For question 4 I used a function with if and elif statements, and the np.random.
 
 \subsection{The code}
 
-I set up a function in this question called "free" I made three different bites and had 100 random integers assigned to each. i then used 1 if statement paired with 2 elif statements and an else statement to assign the percent chance Jimmy would be bit. I set the first bite <=20 return "raptor food" and so on for the second and third bite but for the second bite it was <= 15, and for the this is was <=7. For my else statement i returned "you're safe!!!" because if Jimmy avoided the raptor after all three bites he would get away. 
+I set up a function in this question called "free" I made three different bites and had 100 random integers assigned to each. i then used 1 if statement paired with 2 elif statements and an else statement to assign the percent chance Jimmy would be bit. I set the first bite <=20 return "raptor food" and so on for the second and third bite as for the second bite it was <= 15, and for the this is was <=7. For my else statement I returned "you're safe!!!" because if Jimmy avoided the raptor after all three bites he would get away. 
 
 \subsection{Probability}
 
